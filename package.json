@@ -1,7 +1,7 @@
 {
   "name": "eat-da-brom-biggie-burger-node-express-handlebars",
   "version": "1.0.0",
-  "description": "This restaurant app is Eat-Da-Brom-Biggie-Burger-Node-Express-Handlebars where users gets options on their burgers. They all vegan and would not bite."  
+  "description": "This restaurant app is the Eat-Da-Brom-Biggie-Burger-Node-Express-Handlebars where users gets options on their burgers. They all vegan and would not bite."  
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
