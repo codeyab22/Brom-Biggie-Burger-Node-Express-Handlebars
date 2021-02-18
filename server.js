@@ -18,7 +18,7 @@ app.set("view engine", "handlebars");
 
 // routes for the location to be accessed
 const routes = require("./controllers/burgersController.js");
-app.use("/", routes);
+app.use(routes);
 
 
 /////////////////////////////////////////////// /* Start The Server */ //////////////////////////////////////////////////////////
