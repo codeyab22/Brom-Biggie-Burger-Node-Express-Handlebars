@@ -14,10 +14,10 @@ app.set("view engine", "handlebars");
 
 
 // Import routes and give the server access to them.
-// require("./controllers/burgersController.js")(app);
+// require("./controllers/controllers.js")(app);
 
 // routes for the location to be accessed
-const routes = require("./controllers/burgersController.js");
+const routes = require("./controllers/controllers.js");
 app.use(routes);
 
 
