@@ -8,9 +8,8 @@ const burger = {
 
   selectAll : (callback) => {
 
-    orm.selectAll("burgers", (results)=>{
-      callback(results);
-    });
+   orm.selectAll((results)=>{ callback(results) 
+   });
 
   },
 
