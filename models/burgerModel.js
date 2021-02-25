@@ -14,22 +14,22 @@ const burger = {
   },
 
   // The variables cols and vals are arrays.
-  insertOne : (cols, vals, callback) => {
+  insertOne : ( vals, callback) => {
 
     // Execute orm Function to Post Data into Database
-    orm.insertOne( cols, vals, (result)=>{
+    orm.insertOne( vals, (result)=>{
       console.log("Executing Insert One Model");
       callback(result);
     });
 
   },
 
-  updateOne : (cols, vals, condition, callback) =>{
+  updateOne : ( vals, condition, callback) =>{
 
 
     console.log("Executing Update One Model");
 
-    orm.updateOne( cols, vals, condition, (result)=>{
+    orm.updateOne( condition, (result)=>{
       console.log("Executing Second Declared CallBack");
       callback(result);
     });
@@ -45,4 +45,3 @@ const burger = {
 
 /////////////////////////////////////////////// /*Exports*/ //////////////////////////////////////////////////////////
 module.exports = burger;
-
