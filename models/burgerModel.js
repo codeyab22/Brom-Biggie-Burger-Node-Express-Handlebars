@@ -17,7 +17,7 @@ const burger = {
   insertOne : (cols, vals, callback) => {
 
     // Execute orm Function to Post Data into Database
-    orm.insertOne("burgers", cols, vals, (result)=>{
+    orm.insertOne( cols, vals, (result)=>{
       console.log("Executing Insert One Model");
       callback(result);
     });
@@ -29,7 +29,7 @@ const burger = {
 
     console.log("Executing Update One Model");
 
-    orm.updateOne("burgers", cols, vals, condition, (result)=>{
+    orm.updateOne( cols, vals, condition, (result)=>{
       console.log("Executing Second Declared CallBack");
       callback(result);
     });
