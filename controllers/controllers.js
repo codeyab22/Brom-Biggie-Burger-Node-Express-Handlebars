@@ -24,7 +24,7 @@ router.get("/", function(req, res) {
 
 router.post("/api/burger", function(req, res) {
   console.log("burger Route Hit");
-  burger.insertOne(["burger_name","devoured"], [req.body["burger_name"], req.body.devoured], (result)=>{
+  burger.insertOne([req.body["burger_name"],  (result)=>{
     // Send back the ID of the new quote
     console.log(result);
     res.json(result);
@@ -39,7 +39,7 @@ router.put("/api/burger/:id", function(req, res) {
   console.log("burger Route Hit. ID is "+ burgerID);
   console.log("Dev is " + req.body.devoured);
 
-  burger.updateOne(["devoured"], [req.body.devoured], condition, (result)=>{
+  burger.updateOne( [req.body.devoured], condition, (result)=>{
     // Send back the ID of the new quote
     console.log("Executing First Declared CallBack");
     res.json(result);
@@ -56,11 +56,3 @@ router.put("/api/burger/:id", function(req, res) {
 // Export routes for server.js to use.
 module.exports = router;
 
-
-
-
-
-
-
-
-//
