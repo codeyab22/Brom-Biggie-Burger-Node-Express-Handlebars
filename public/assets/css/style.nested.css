@@ -39,7 +39,7 @@ body #middleSection {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "leftMiddle centerMiddle rightMiddle";
-    color: white; }
+    color: black; }
     body #middleSection .leftMiddle {
       display: grid;
       grid-area: leftMiddle;
