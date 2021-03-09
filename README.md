@@ -18,10 +18,14 @@ Check this website out: https://brom-biggie-burger.herokuapp.com/
 # How to add JAWSWB to Heroku App and MYSQL Workbench
 
 1.Login in Heroku. If you have not created an account, then https://signup.heroku.com/
-3.Press connect github to the Heroku and make sure there are no errors
-4.Go to Resources to look for add-ons. If it is not there, search JAWSWB mySQL and submit order form. 
-5. Look at the String connection in JAWS-put all that data to the myQL worksbench-host, username and password
-6. Look the deployed open app and make sure the connection is running the server. If there are 
+
+2.Press connect github to the Heroku and make sure there are no errors
+
+3.Go to Resources to look for add-ons. If it is not there, search JAWSWB mySQL and submit order form. 
+
+4. Look at the String connection in JAWS-put all that data to the myQL worksbench-host, username and password
+
+5. Look the deployed open app and make sure the connection is running the server. If there are errors, test heroku logs--tail.
 
 
 # Authors:
