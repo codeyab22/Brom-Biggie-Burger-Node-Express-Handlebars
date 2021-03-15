@@ -23,20 +23,21 @@
   width: 100vw
 
 
-body
-  height: 100vh
-  padding: 0
-  margin: 0
-  display: grid
-  background: url("../img/burger.jpg")
-  background-repeat: no-repeat
-  background-size: cover
-  @include grid($columns:1fr , $rows: 50px 1fr 20px, $area: "headerSection" "middleSection" "footerSection")
-  grid-row-gap: 10px
+body {
+ height: 100vh
+ padding: 0
+ margin: 0
+ display: grid
+ background: url("../img/burger.jpg")
+ background-repeat: no-repeat
+ background-size: cover
+ @include grid($columns:1fr , $rows: 50px 1fr 20px, $area: "headerSection" "middleSection" "footerSection")
+ grid-row-gap: 10px
+}
 
-  .center
+  .center {
     @include grid_Vertical_Horizontal_Center
-
+}
 
   #headerSection
     grid-area: headerSection
