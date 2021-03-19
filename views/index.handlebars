@@ -1,44 +1,39 @@
-<div id ="headerSection">
-  <h2>Eat Da Brom Biggie Burger</h2>
+<h1 class="title text-center">Brom-Biggie-Burger!</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col" id="list-burgers">
+            <h2 class="burger-title text-center">Brom Biggie Burgers Available</h2>
+            {{#each burgers}}
+            {{#unless this.devoured}}
+            <div class="available-burgers">
+                <form action="/burgers/{{this.id}}?_method=PUT" method="POST" class="update-button">
+                    {{this.burger_name}}
+                    <button type="submit" class="btn- btn-default" id="burger-ready">DEVOUR IT</button>
+                </form>
+            </div>
+            {{/unless}}
+            {{/each}}
+        </div>
+        <div class="col" id="burger-gif">
+            <img src="assets/img/burger.gif" class="text-center" id="gif">
+        </div>
+        <div class="col" id="list-devoured">
+            <h2 class="burger-title text-center">Brom Biggie Burgers Devoured</h2>
+            {{#each burgers}}
+            {{#if this.devoured}}
+            <div class="devoured-burgers">
+                {{this.burger_name}}
+            </div>
+            {{/if}}
+            {{/each}}
+        </div>
+    </div>
 </div>
 
-<!-- Middle Section -->
-<div id="middleSection">
-
-  <!-- Left  -->
-  <div class="leftMiddle">
-    <div class="uneaten center">
-      {{#each burger}}
-        {{#unless devoured}}
-          {{> burgers/burgerBlock devoured=1}}
-        {{/unless}}
-      {{/each}}
+<form id="add-burger" action="/burgers" class="create-form" method="POST">
+    <div class="form-group col-md-8">
+        <input type="text" id="enter-burger" name="burger_name" class="form-control">
+        <button type="submit" class="btn btn-default" id="submit-burger">ADD BURGER</button>
     </div>
-  </div>
-
-  <!-- Center -->
-  <div class="centerMiddle">
-    <div class="center">
-      <input id="burgerName" type="text" placeholder="Name of Your Favorite Burger" data-eaten="0">
-      <button id="addBurger" type="button">Add Your Favorite Burger</button>
-    </div>
-  </div>
-
-  <!-- Right -->
-  <div class="rightMiddle">
-    <div class="eaten center">
-      {{#each burger}}
-        {{#if devoured}}
-          {{> burgers/burgerBlock devoured=0}}
-        {{/if}}
-      {{/each}}
-    </div>
-  </div>
-
-</div>
-<!-- End of Middle Section -->
-
-<div id ="footerSection">
-  <p>Created By Adia</p>
-</div>
-
+</form>
