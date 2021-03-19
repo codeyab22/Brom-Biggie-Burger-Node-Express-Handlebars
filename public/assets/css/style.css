@@ -1,0 +1,100 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:#72173a;
+}
+
+.title {
+    font-family: 'Sigmar One', cursive;
+    font-size: 60px;
+    color:gold;
+    padding: 20px;
+}
+
+.burger-title {
+    color: gold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#list-devoured {
+    margin: 10px;
+    height: 300px;
+    overflow: auto;
+    background-color:rgb(39, 38, 34) ;
+}
+
+#list-burgers {
+    margin: 10px;
+    height: 300px;
+    overflow: auto;
+    background-color:rgb(39, 38, 34);
+}
+
+.container {
+    padding: 10px;
+}
+
+.available-burgers {
+    overflow: hidden;
+    font-size: 20px;
+    margin: 8px;
+    border: 2px solid rgb(73, 47, 49);
+    padding: 3px;
+}
+
+.devoured-burgers {
+    font-size: 20px;
+    margin: 8px;
+    border: 2px solid gold;
+    padding: 3px;
+}
+
+#burger-ready {
+    float: right;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: #86507d;
+}
+
+#burger-ready:hover {
+    color: #000000;
+    border: 3px solid gold;
+    background-color: rgb(240, 203, 203);
+}
+
+#add-burger{
+    margin: 0 auto; 
+    width: 250px;
+    margin-bottom: 50px;
+}
+
+#enter-burger {
+    font-size: 25px;
+    width: 200px;
+    height: 50px;
+    align-content: center;
+    color: #000000;
+    background-color: gold;   
+}
+
+#submit-burger {
+    font-size: 20px;
+    height: 40px;
+    margin: 0 auto; 
+    width: 200px;
+    padding: 10px;
+    color:#a36868;
+    background-color:gold;
+}
+
+#submit-burger:hover {
+    border: 3px solid gold;
+    color: #a36868;
+    background-color:#380c0c;
+}
+
+#gif {
+    width: 300px;
+    height: auto;
+}
