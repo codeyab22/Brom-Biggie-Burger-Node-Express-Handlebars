@@ -1,23 +1,21 @@
 $(document).ready(function() {
 
-  // Add Burger to Database Button
-  $("#submit-burger").on("click", function(){
+    // Add Burger to Database Button
+  $("#add-burger").on("submit", function(event){
+    event.preventDefault();
     console.log("Add Burger Button Clicked");
-
     // Create an Object to be Sent to the Backend
     let burger = {
-      "burger_name": $(burgerName).val(),
-      "devoured": $(burgerName).data("eaten")
+      "burger_name": $('#enter-burger').val(),
+      "devoured": false
     };
-
     $.post("/api/burger", burger).done((response)=>{
       console.log("Created a New Burger!");
       // Reload the page to get the updated list
       location.reload();
     });
-
   }); // End of Create New Burger
-
+  
   // Update Burger from Database Button
 
   $(".burgerBlock").on("click", function(){
