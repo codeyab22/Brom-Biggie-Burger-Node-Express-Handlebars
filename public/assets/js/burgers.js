@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   // Add Burger to Database Button
-  $("#addBurger").on("click", function(){
+  $("#submit-burger").on("click", function(){
     console.log("Add Burger Button Clicked");
 
     // Create an Object to be Sent to the Backend
