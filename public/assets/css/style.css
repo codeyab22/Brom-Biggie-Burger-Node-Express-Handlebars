@@ -98,3 +98,7 @@ body {
     width: 300px;
     height: auto;
 }
+
+.update-button {
+    color: gold;
+}
