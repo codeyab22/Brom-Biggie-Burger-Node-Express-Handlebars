@@ -12,7 +12,7 @@ router.get("/", function(req, res) {
     console.log("Route Path Hit");
     burger.selectAll((data) => {
       handlebarsObject = {
-        burger: data
+        burgers: data
       };
       console.log("Diplayed Burgers");
       res.render("index", handlebarsObject);
