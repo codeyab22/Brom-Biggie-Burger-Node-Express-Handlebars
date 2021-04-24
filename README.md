@@ -1,4 +1,6 @@
 # Eat-Da-Brom-Biggie-Burger-Node-Express-Handlebars
+
+# About the Project 
 This is the 12th project. THis Eat-Da-Brom-Biggie-Burger-Node-Express-Handlebars is for the all vegan (everything you restaurant app that gives burgers a rennovation for the quarantine. It allows the users to give their burgers options through their inputs. Connecting the heroku app to Github, it activates the deployed website.
 
 # User's Story
@@ -28,10 +30,12 @@ Check this website out: https://brom-biggie-burger.herokuapp.com/
 5. Look the deployed open app and make sure the connection is running the server. If there are errors, test heroku logs--tail.
 
 
-# Authors:
+# Author(s):
 
 Adia Boyd
 
-# Contact Me
+# Questions?
+
+Contact Me at
 
 Github: codeyab22
