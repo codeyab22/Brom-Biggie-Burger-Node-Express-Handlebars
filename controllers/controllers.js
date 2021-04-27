@@ -17,13 +17,10 @@ router.get("/", function(req, res) {
 //Post Routes 
 router.post("/api/burger/:id", function(req, res) {
   let burgerID = req.params.id
-  let condition = "id = " + burgerID ;
-  req.body = {
-    "devoured": devoured
-  };
+  // let condition = "id = " + burgerID ;
   console.log("burger Route Hit. ID is "+ burgerID);
-  console.log("Dev is " + req.body.devoured);
-  burger.updateOne( [req.body.devoured], condition, (result)=>{
+  // console.log("Dev is " + req.body.devoured);
+  burger.updateOne( {}, burgerID, (result)=>{
     // Send back the ID of the new quote
     console.log("Executing First Declared CallBack");
     res.json(result);
