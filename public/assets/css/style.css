@@ -90,5 +90,6 @@ body {
     color: gold;
 }
 #png {
+ border: 1px, red;
   width: 50%;
 }
