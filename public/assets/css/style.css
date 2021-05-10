@@ -89,3 +89,6 @@ body {
 .update-button {
     color: gold;
 }
+#png {
+  width: %50;
+}
