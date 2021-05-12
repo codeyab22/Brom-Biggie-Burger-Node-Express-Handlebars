@@ -7,15 +7,19 @@ This is the 12th project. THis Eat-Da-Brom-Biggie-Burger-Node-Express-Handlebars
 This is for a person that is hungry and consistently works/stays at home. This is good time for his/her lunch break. This is a perfect food online 
 for a user who don't want to be in the line for his/her order. 
 
-# Motivation(s
+# Motivation(s)
 My motivation is to experiment with SQL and take a good look at the list of the menu order to gives users pretty cool options.
 My motivation is to give user to pick their tastes of the burgers and  choose their favorites.
 
 
 # Link of the Repository
-Check this repo out: https://github.com/codeyab22/Brom-Biggie-Burger-Node-Express-Handlebars
+Lin to this repo: https://github.com/codeyab22/Brom-Biggie-Burger-Node-Express-Handlebars
 # Linked of the Deployed Website
-Check this website out: https://brom-biggie-burger.herokuapp.com/
+Link to this deployed website: https://brom-biggie-burger.herokuapp.com/
+
+# Screenshot of the Deployed Website:
+
+![image](https://drive.google.com/uc?export=view&id=1BOFJRPkBPpnQslE_prQB5RXJ0bMrCu7n)
 
 # How to add JAWSWB to Heroku App and MYSQL Workbench
 
