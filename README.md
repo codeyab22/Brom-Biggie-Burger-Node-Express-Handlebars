@@ -40,6 +40,6 @@ Adia Boyd
 
 # Questions?
 
-Contact Me at
+Free free to ask and contact Me at
 
 Github: codeyab22
